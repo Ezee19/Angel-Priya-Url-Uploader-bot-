@@ -8,7 +8,7 @@ class Config(object):
     API_HASH = os.environ.get("API_HASH", "016d5e115a06ddfb6121823d72ae4d8c")
     # Get these values from my.telegram.org
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "5104293442").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "5104293442,5791145987").split())
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Telegram maximum file upload size
